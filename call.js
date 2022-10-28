@@ -3,19 +3,15 @@
 
 // With call(), an object can use a method belonging to another object
 
-const person = {
-    fullName: function() {
-      return this.firstName + " " + this.lastName;
-    }
-  }
-  const person1 = {
-    firstName:"John",
-    lastName: "Doe"
-  }
-  const person2 = {
-    firstName:"Mary",
-    lastName: "Doe"
-  }
-  
-  // This will return "Mary Doe"
- console.log( person.fullName.call(person1));
+parent = {
+   fullname : function(city, country){
+    return this.firstname + " " + this.lastname  + "," + city + "," + country;;
+   } 
+}
+
+child = {
+    firstname:"ram",
+    lastname:"raghuvanshi",
+}
+
+console.log(parent.fullname.call(child, 'indore', 'India'));
