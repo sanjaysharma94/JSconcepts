@@ -4,7 +4,7 @@
         this.lastname=lastname;
     }
 
-    fullname= function() {
+    fullname() {
         return this.name+" "+ this.lastname
     }
 
