@@ -4,7 +4,7 @@ function Constructored (givenName,givenAge){
 
 }
 
-let sanjaydetail = new Constructored("sanjayJi",25);
-let vijaydetail = new Constructored("vijayJi",23);
+let sanjaydetail = new Constructored("sanjay",27);
+let vijaydetail = new Constructored("vijayJ",25);
 
-console.log(typeof sanjaydetail)
+console.log(sanjaydetail)
