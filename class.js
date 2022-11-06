@@ -11,19 +11,22 @@
 
 }
 
-class cars1 {
+class cars1 extends cars{
     constructor(name,lastname){
         this.name=name;
         this.lastname=lastname;
     }
 
-    fullname1= function(city) {
-        return this.name + " "+ this.lastname + " is from " + city
-    }
+    super(){
 
+    }
 
 }
 
-let first = new cars("hero","sharma");
+
+
+
+
+let first = new cars1("hero","sharma");
 
 console.log(first.fullname());
