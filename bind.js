@@ -20,7 +20,7 @@ const person = {
   
   let fullName = person.fullName.bind(member);
 
-console.log(fullName())
+console.log(member);
 
 
 // Preserving this
@@ -44,7 +44,7 @@ const person1 = {
     }
   }
   
-  setTimeout(person1.display, 3000);
+  setTimeout(person1.display.bind(person1), 3000);
 
 
   //The bind() method solves this problem.
@@ -61,5 +61,5 @@ const person1 = {
     }
   }
   
-  let display = person2.display.bind(person);
+  let display = person1.display.bind(person);
   setTimeout(display, 3000);
