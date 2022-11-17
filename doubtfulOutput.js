@@ -24,14 +24,14 @@
 
 
 
-// var number = 10;
-// var display = function () {
-//   console.log(number);
-//   var number = 20;
-// //   console.log(number);
-// };
-// display();
-// // answer is undefined due to hoisting
+var number = 10;
+var display = function () {
+  console.log(number);
+  var number = 20;
+  console.log(number);
+};
+display();
+// answer is undefined due to hoisting
 
 
 
